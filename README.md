@@ -38,8 +38,6 @@ If you are using the [Postman plugin](https://github.com/castlegateit/cgit-wp-po
 
     $foo = new Postcard('foo');
 
-    $foo->novalidate = true;
-
     $foo->field('username', [
         'label' => 'Name',
         'type' => 'text',
