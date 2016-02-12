@@ -55,8 +55,6 @@ class Subscribe
         // Merge in any additional arguments and apply a filter
         $args = array_merge($args, $extra);
         $args = apply_filters('cgit_campaign_monitor_subscribe', $args);
-        var_dump($args);
-        return;
 
         // Try submitting to Campaign Monitor
         $this->object->add($args);
