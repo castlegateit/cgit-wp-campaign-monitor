@@ -87,3 +87,13 @@ Each instance of the `Cgit\Subscribe` class can use a different API key and/or l
     $list = new Subscribe($api_key, $list_id);
 
 Set either of these to `false` to use the default values from the constants defined in `wp-config.php`.
+
+## Campaign Monitor PHP library ##
+
+The Campaign Monitor PHP library is included in this repository as a submodule, so you should clone this repository recursively:
+
+    git clone --recursive git@github.com:castlegateit/cgit-wp-campaign-monitor
+
+Alternatively, if you have already cloned this repository, update the submodules:
+
+    git submodule update --init
