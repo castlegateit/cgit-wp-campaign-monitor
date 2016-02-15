@@ -16,8 +16,8 @@ License: MIT
 require __DIR__ . '/src/autoload.php';
 
 // Load Campaign Monitor API classes
-require __DIR__ . '/createsend-php/csrest_campaigns.php';
-require __DIR__ . '/createsend-php/csrest_subscribers.php';
+require __DIR__ . '/src/createsend/csrest_campaigns.php';
+require __DIR__ . '/src/createsend/csrest_subscribers.php';
 
 // Run plugin
 require __DIR__ . '/constants.php';
