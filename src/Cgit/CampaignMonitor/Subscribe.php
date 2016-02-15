@@ -26,8 +26,6 @@ class Subscribe
      */
     public function __construct($api = false, $list = false)
     {
-        $this->object = new CS_REST_Subscribers($this->apiKey, $this->listId);
-
         if ($api) {
             $this->apiKey = $api;
         }
@@ -35,6 +33,8 @@ class Subscribe
         if ($list) {
             $this->listId = $list;
         }
+
+        $this->object = new CS_REST_Subscribers($this->apiKey, $this->listId);
     }
 
     /**
