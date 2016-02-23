@@ -9,6 +9,8 @@ class SubscribeWidget extends WP_Widget
 {
     /**
      * Register widget
+     *
+     * @return void
      */
     public function __construct()
     {
@@ -22,6 +24,10 @@ class SubscribeWidget extends WP_Widget
 
     /**
      * Display widget content
+     *
+     * @param array $args Widget parameters
+     * @param array $instance Widget instance parameters
+     * @return void
      */
     public function widget($args, $instance)
     {
@@ -41,6 +47,9 @@ class SubscribeWidget extends WP_Widget
 
     /**
      * Display widget settings
+     *
+     * @param array $instance Widget instance parameters
+     * @return void
      */
     public function form($instance)
     {

@@ -8,12 +8,16 @@ class Subscribe
 {
     /**
      * API keys
+     *
+     * @var string
      */
     private $apiKey = CGIT_CAMPAIGN_MONITOR_API_KEY;
     private $listId = CGIT_CAMPAIGN_MONITOR_LIST_ID;
 
     /**
      * API subscriber wrapper instance
+     *
+     * @var \CS_REST_Subscribers
      */
     private $object;
 
@@ -23,6 +27,10 @@ class Subscribe
      * Creates a new instance of the Campaign Monitor subscriber wrapper class
      * to provide access to the API. Also lets you override the account and list
      * for this instance.
+     *
+     * @param string|bool $api API key
+     * @param string|bool $list List ID
+     * @return void
      */
     public function __construct($api = false, $list = false)
     {
@@ -43,6 +51,11 @@ class Subscribe
      * The name field is optional. Additional (e.g. custom) fields can be added
      * as an array in the third argument. Returns the result: true on success,
      * false on failure.
+     *
+     * @param string $email
+     * @param string $name
+     * @param array $extra Additional fields supplied as key-value pairs
+     * @return bool
      */
     public function add($email, $name = false, $extra = [])
     {
