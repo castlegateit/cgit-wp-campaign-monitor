@@ -70,10 +70,7 @@ class Subscribe
         $args = apply_filters('cgit_campaign_monitor_subscribe', $args);
 
         // Try submitting to Campaign Monitor
-        $this->object->add($args);
-
-        // Return success or failure
-        return $this->object->was_successful();
+        return $this->object->add($args);
     }
 
     /**
