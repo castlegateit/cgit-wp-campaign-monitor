@@ -42,7 +42,7 @@ class Subscribe
             $this->listId = $list;
         }
 
-        $this->object = new CS_REST_Subscribers($this->apiKey, $this->listId);
+        $this->object = new CS_REST_Subscribers($this->listId, $this->apiKey);
     }
 
     /**
