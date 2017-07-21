@@ -13,10 +13,10 @@ define('CGIT_CAMPAIGN_MONITOR_LIST_ID', 'your list ID');
 
 ## Subscribe ##
 
-You can use the `Cgit\Subscribe` class to add subscribers to the mailing list:
+You can use the `Cgit\CampaignMonitor\Subscribe` class to add subscribers to the mailing list:
 
 ~~~ php
-use Cgit\Subscribe;
+use Cgit\CampaignMonitor\Subscribe;
 
 $list = new Subscribe();
 $list->add($email, $name, $extra = []);
@@ -32,7 +32,7 @@ The class includes a basic HTML form, which automatically calls the `add()` meth
 echo $list->render();
 ~~~
 
-You do not have to use this form. Simply create an instance of `Cgit\Subscribe` and use the `add()` method with your own form.
+You do not have to use this form. Simply create an instance of `Cgit\CampaignMonitor\Subscribe` and use the `add()` method with your own form.
 
 ## Widget ##
 
@@ -90,7 +90,7 @@ add_filter('cgit_postman_data', function($data) {
 
 ## Using different API keys and list IDs ##
 
-Each instance of the `Cgit\Subscribe` class can use a different API key and/or list ID. These are specified in the constructor:
+Each instance of the `Cgit\CampaignMonitor\Subscribe` class can use a different API key and/or list ID. These are specified in the constructor:
 
 ~~~ php
 $list = new Subscribe($api_key, $list_id);
