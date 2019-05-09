@@ -8,7 +8,7 @@ Description: Campaign Monitor integration for WordPress.
 Version: 1.1
 Author: Castlegate IT
 Author URI: http://www.castlegateit.co.uk/
-License: MIT
+License: AGPL
 
 */
 
